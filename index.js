@@ -33,9 +33,15 @@ btn1.addEventListener('click', function() {
 
 // })
 
-submitbtn.addEventListener('click', function() {
-        container1.style.display = "none";
-        container2.style.display = "bock";
+// submitbtn.addEventListener('click', function() {
+//         container1.style.display = "none";
+//         container2.style.display = "flex";
 
-    })
-    // console.log('sm', submitbtn);
+//     })
+// console.log('sm', submitbtn);
+
+
+submitbtn.addEventListener('click', function() {
+    container1.classList.add('hidden');
+    container2.classList.remove('hidden');
+});
