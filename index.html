@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating page</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="index.js"></script>
+</head>
+
+<body class="flex justify-center h-screen items-center bg-[hsl(216,12%,8%)]">
+    <div id='container02' class="container1 h-80 w-80 rounded-3xl flex py-8 flex-col px-8 gap-3 bg-[hsl(213,19%,18%)]">
+        <div class="svgcontainer h-9 w-9 bg-[hsl(216,12%,8%)] bg-opacity-30 flex justify-center items-center rounded-full p-3">
+            <img src="./images/icon-star.svg" alt="" />
+        </div>
+        <div class="heading text-lg font-bold text-white">How did we do?</div>
+        <p class="para text-gray-400 text-sm">
+            Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+        <div class="numbers flex gap-3">
+            <button class="btns" id="btn1">1</button>
+            <button class="btns" id="btn2">2</button>
+            <button class="btns" id="btn3">3</button>
+            <button class="btns" id="btn4">4</button>
+            <button class="btns" id="btn5">5</button>
+        </div>
+        <button id="submitBtn" class="submitbtn bg-orange-400 py-1
+         rounded-3xl text-white focus:bg-white focus:text-orange-400">
+        submit
+      </button>
+    </div>
+    <div id='container02' class="container2 h-80 w-80 rounded-3xl flex-col
+     py-8 justify-center items-center gap-3 bg-[hsl(213,19%,18%)] hidden">
+        <div class="svg2container h-36 w-36 flex items-center">
+            <img src="\images\illustration-thank-you.svg" alt="" />
+        </div>
+        <div class="ratemsg rounded-3xl bg-[hsl(216,12%,8%)] text-orange-400 p-1 text-sm w-44 text-center bg-opacity-30">
+            You selected 4 out of 5
+        </div>
+        <div class="thankyoumsg font-bold text-lg text-white">Thank you!</div>
+        <p class="thankspara text-center text-gray-400 px-4 text-sm">
+            We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+    </div>
+</body>
+
+</html>

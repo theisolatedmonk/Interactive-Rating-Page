@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btns {
+    @apply w-10 h-10 items-center rounded-full text-sm font-bold bg-opacity-30;
+    background: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+}
+
+.btns:hover {
+    @apply bg-orange-400 text-white;
+}
+
+.btns:focus {
+    @apply outline-none bg-slate-400 text-white;
+}
