@@ -8,23 +8,29 @@ const submitbtn = document.getElementById('submitBtn');
 const container1 = document.getElementById('container01');
 const container2 = document.getElementById('container02');
 
-
+let button = submitbtn;
+button.disabled = true;
 
 
 btn1.addEventListener('click', function() {
     ratemsg.innerHTML = ' You selected 1 out of 5'
+    button.disabled = false;
 })
 btn2.addEventListener('click', function() {
     ratemsg.innerHTML = ' You selected 2 out of 5'
+    button.disabled = false;
 })
 btn3.addEventListener('click', function() {
     ratemsg.innerHTML = ' You selected 3 out of 5'
+    button.disabled = false;
 })
 btn4.addEventListener('click', function() {
     ratemsg.innerHTML = ' You selected 4 out of 5'
+    button.disabled = false;
 })
 btn5.addEventListener('click', function() {
     ratemsg.innerHTML = ' You selected 5 out of 5'
+    button.disabled = false;
 })
 
 
